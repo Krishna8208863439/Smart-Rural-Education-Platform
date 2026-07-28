@@ -1,0 +1,1 @@
+# Smart-Rural-Education-Platform
