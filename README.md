@@ -19,13 +19,13 @@
 ## 🚀 Key Features
 
 ### 1. 🤖 24/7 AI Personal Tutor (`/tutor`)
-- **Multilingual Support**: Supports English, Hindi, Marathi, Telugu, Tamil, and more local dialects.
-- **Concept Explanations**: Step-by-step breakdown of complex topics in simple regional language.
+- **Multilingual Support**: Supports English, Hindi, Marathi, Telugu, Tamil, and more regional languages.
+- **Concept Explanations**: Step-by-step breakdown of complex topics with intuitive real-world examples.
 - **Interactive Practice & Quiz Generation**: Real-time evaluation and adaptive difficulty.
 - **Voice & Text Interactions**: Accessible for students of all literacy levels.
 
 ### 2. 📚 Offline-Ready Modular Courses (`/courses`)
-- **Class 6th to 12th & Vocational Tracks**: Mathematics, Science, Social Studies, English, and Computer Fundamentals.
+- **Class 6th to 12th & Vocational Tracks**: Mathematics, Science, Social Studies, English, and Digital Literacy.
 - **Bandwidth Optimization**: Low-data consumption mode and one-click offline packet download.
 - **Progress Tracking**: Automatic sync when connectivity is restored.
 
@@ -69,32 +69,31 @@
 
 ```bash
 Smart-Rural-Education-Platform/
-├── .gitignore               # Root git ignore
-├── README.md                # Main repository documentation
-└── web/                     # Next.js Web Application
-    ├── package.json         # Project dependencies & scripts
-    ├── next.config.ts       # Next.js configuration
-    ├── tsconfig.json        # TypeScript configuration
-    ├── public/              # Static assets, icons, and logos
-    └── src/
-        ├── app/             # App Router Pages
-        │   ├── layout.tsx   # Root layout & meta configuration
-        │   ├── page.tsx     # Modern interactive landing page
-        │   ├── login/       # User sign-in page
-        │   ├── register/    # New account registration
-        │   ├── tutor/       # AI Multilingual Tutor workspace
-        │   ├── courses/     # Interactive course catalog & reader
-        │   ├── labs/        # Virtual STEM lab simulations
-        │   ├── careers/     # Vocational guidance & scholarships
-        │   └── teacher/     # Teacher dashboard & classroom management
-        ├── components/      # Reusable UI components
-        │   ├── auth/        # Protected routes & auth modals
-        │   ├── landing/     # Hero, features, statistics, CTA
-        │   ├── layout/      # Universal Header, Navigation, Footer
-        │   └── ui/          # Accessible buttons, cards, dialogs
-        └── lib/             # Data stores, state management & utilities
-            ├── auth-store.ts# Authentication state (Zustand)
-            └── data-store.ts# Course data, lab simulations & mock DB
+├── package.json         # Project dependencies & scripts
+├── next.config.ts       # Next.js configuration
+├── tsconfig.json        # TypeScript configuration
+├── .gitignore           # Git ignore rules
+├── README.md            # Comprehensive project documentation
+├── public/              # Static assets, icons, and logos
+└── src/
+    ├── app/             # App Router Pages
+    │   ├── layout.tsx   # Root layout & meta configuration
+    │   ├── page.tsx     # Modern interactive landing page
+    │   ├── login/       # User sign-in page
+    │   ├── register/    # New account registration
+    │   ├── tutor/       # AI Multilingual Tutor workspace
+    │   ├── courses/     # Interactive course catalog & reader
+    │   ├── labs/        # Virtual STEM lab simulations
+    │   ├── careers/     # Vocational guidance & scholarships
+    │   └── teacher/     # Teacher dashboard & classroom management
+    ├── components/      # Reusable UI components
+    │   ├── auth/        # Protected routes & auth guards
+    │   ├── landing/     # Hero, features, statistics, CTA
+    │   ├── layout/      # Universal Header, Navigation, Footer
+    │   └── ui/          # Accessible buttons, cards, dialogs, dropdowns
+    └── lib/             # Data stores, state management & utilities
+        ├── auth-store.ts# Authentication state (Zustand)
+        └── data-store.ts# Course data, lab simulations & mock DB
 ```
 
 ---
@@ -113,22 +112,17 @@ Smart-Rural-Education-Platform/
    cd Smart-Rural-Education-Platform
    ```
 
-2. **Navigate to the web app directory:**
-   ```bash
-   cd web
-   ```
-
-3. **Install dependencies:**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-4. **Start the development server:**
+3. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-5. **Open in browser:**
+4. **Open in browser:**
    Visit **[http://localhost:3000](http://localhost:3000)** to explore the platform.
 
 ---
